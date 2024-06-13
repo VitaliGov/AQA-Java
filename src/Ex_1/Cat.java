@@ -1,6 +1,6 @@
 package Ex_1;
 
-public class Cat extends Ex_1.Animal {
+public class Cat extends Animal {
     static int totalCats = 0;
     private boolean satiety;
 

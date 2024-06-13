@@ -1,13 +1,16 @@
 package Ex_2;
 
-public class Rectangle extends Shape {
+public class Rectangle implements Shape {
     private double width;
     private double height;
+    private String fillColor;
+    private String borderColor;
 
     public Rectangle(double width, double height, String fillColor, String borderColor) {
-        super(fillColor, borderColor);
         this.width = width;
         this.height = height;
+        this.fillColor = fillColor;
+        this.borderColor = borderColor;
     }
 
     @Override
@@ -18,5 +21,15 @@ public class Rectangle extends Shape {
     @Override
     public double getArea() {
         return width * height;
+    }
+
+    @Override
+    public String getFillColor() {
+        return fillColor;
+    }
+
+    @Override
+    public String getBorderColor() {
+        return borderColor;
     }
 }

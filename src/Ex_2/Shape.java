@@ -1,23 +1,19 @@
 package Ex_2;
 
-public abstract class Shape {
-    private String fillColor;
-    private String borderColor;
+public interface Shape {
+    double getPerimeter();
 
-    public Shape(String fillColor, String borderColor) {
-        this.fillColor = fillColor;
-        this.borderColor = borderColor;
-    }
+    double getArea();
 
-    public abstract double getPerimeter();
+    String getFillColor();
 
-    public abstract double getArea();
+    String getBorderColor();
 
-    public String getFillColor() {
-        return fillColor;
-    }
-
-    public String getBorderColor() {
-        return borderColor;
+    default void printShapeDetails() {
+        System.out.println("Perimeter: " + getPerimeter());
+        System.out.println("Area: " + getArea());
+        System.out.println("Fill Color: " + getFillColor());
+        System.out.println("Border Color: " + getBorderColor());
+        System.out.println();
     }
 }

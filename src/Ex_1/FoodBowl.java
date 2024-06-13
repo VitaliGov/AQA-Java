@@ -24,4 +24,3 @@ public class FoodBowl {
         food -= amount;
     }
 }
-

@@ -1,11 +1,14 @@
 package Ex_2;
 
-public class Circle extends Shape {
+public class Circle implements Shape {
     private double radius;
+    private String fillColor;
+    private String borderColor;
 
     public Circle(double radius, String fillColor, String borderColor) {
-        super(fillColor, borderColor);
         this.radius = radius;
+        this.fillColor = fillColor;
+        this.borderColor = borderColor;
     }
 
     @Override
@@ -17,5 +20,14 @@ public class Circle extends Shape {
     public double getArea() {
         return Math.PI * radius * radius;
     }
-}
 
+    @Override
+    public String getFillColor() {
+        return fillColor;
+    }
+
+    @Override
+    public String getBorderColor() {
+        return borderColor;
+    }
+}
