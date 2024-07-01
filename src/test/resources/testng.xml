@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AllTestsSuite">
+    <test name="AllTests">
+        <classes>
+            <class name="tests.CheckBlockTitleTest"/>
+            <class name="tests.CheckFormTest"/>
+            <class name="tests.CheckMoreAboutServiceLinkTest"/>
+            <class name="tests.CheckPaymentSystemLogosTest"/>
+        </classes>
+    </test>
+</suite>
